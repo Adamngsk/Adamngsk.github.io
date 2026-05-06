@@ -47,6 +47,19 @@ npm.cmd run dev
 npm run build
 ```
 
+## GitHub Pages Deployment
+
+This Vite/React site is deployed by `.github/workflows/static.yml`. On every push to
+`main` or `master`, GitHub Actions installs dependencies, lints, builds the app, and
+publishes the generated `dist` folder to the `gh-pages` branch.
+
+In repository settings, set GitHub Pages to publish from:
+
+```text
+Branch: gh-pages
+Folder: / (root)
+```
+
 ## Notes
 
 - Update `src/data/siteData.js` with Adam's final GitHub and LinkedIn profile URLs.

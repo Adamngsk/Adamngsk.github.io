@@ -26,6 +26,8 @@ import {
 const MotionDiv = motion.div;
 
 function App() {
+  const certificateSrc = `${import.meta.env.BASE_URL}assets/pre-rec-certification.png`;
+
   function handleContactSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
@@ -249,7 +251,7 @@ function App() {
             </div>
             <img
               className="h-auto w-full border-t border-white/10 object-cover"
-              src="/assets/pre-rec-certification.png"
+              src={certificateSrc}
               alt="UR2PhD Computing Research Association certificate for Adam Ng"
               loading="lazy"
             />
