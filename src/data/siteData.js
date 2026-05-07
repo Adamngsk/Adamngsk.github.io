@@ -29,11 +29,12 @@ export const profile = {
 };
 
 export const navItems = [
-  { label: "Arsenal", href: "#arsenal" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Terminal", href: "#terminal" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", to: "/" },
+  { label: "Arsenal", to: "/arsenal" },
+  { label: "Projects", to: "/projects" },
+  { label: "Experience", to: "/experience" },
+  { label: "Terminal", to: "/terminal" },
+  { label: "Contact", to: "/contact" },
 ];
 
 export const metrics = [
